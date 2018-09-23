@@ -1,0 +1,1 @@
+cd ./src && javac -d ../compiled *.java && cd ../compiled && java Main
