@@ -1,7 +1,6 @@
 ### Task1
 
 From src 
-===
 to build:
 ```sh
 javac TaskApplet.java
@@ -14,7 +13,6 @@ appletviewer index.html
 #### Task 2
 
 From src
-===
 to build:
 ```sh
 javac -d labpackage Number.java && javac -cp labpacakge -d labpackage Main.java
