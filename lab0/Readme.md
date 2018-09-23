@@ -4,22 +4,22 @@
   javac -d ./bin ./src/*.java && cd ./bin && java One
 ```
 
-### Tasl2
+### Task 2
 
 ```sh 
   cd ./src && javac -d ../compiled *.java && cd ../compiled && java Main
 ```
-Task 3
+### Task 3
 
 ```sh 
   cd ./src && javac -d ../bin *.java && cd ../bin && java Main
 ```
-Task 4
+### Task 4
 
 ```sh 
   cd ./src && jar cmf Manifest tmp.jar *.java
 ```
-Task 5
+### Task 5
 
 ```sh 
   cd ./src && javac -d ../labpackage Hello.java
