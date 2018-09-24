@@ -1,4 +1,4 @@
-###Task1
+### Task1
 from src 
 ===
 to build:
@@ -7,7 +7,7 @@ javac TaskApplet.java
 to execute:
 appletviewer index.html
 ===
-###Task2
+### Task2
 from src 
 ===
 to build:
