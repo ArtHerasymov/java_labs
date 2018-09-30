@@ -1,4 +1,4 @@
-package lab1.task2;
+package com.my.lab1.task2;
 
 public class Number{
     private int counter = 2;
