@@ -1,5 +1,4 @@
 ### Task1
-
 from task1 
 ===
 to build:
@@ -14,14 +13,16 @@ appletviewer -J-cp -J./bin/ src/index.html
 ```
 ===
 ### Task2
-
-from src 
+from task2
 ===
 to build:
 ```
-javac -d labpackage Number.java && javac -cp labpacakge -d labpackage Main.java
+javac -d bin/ src/SmartNumber.java
+javac -cp bin/ -d bin/ src/Numbers.java
+javac -cp bin/ -d bin/ src/ConsoleInterface.java
+javac -cp bin/ -d bin/ src/Main.java
 ```
 ===
 to run:
-from lab1/task2
-java -cp labpackage lab1.task2.Main
+from task2
+java -cp bin/ com.lab1.task2.Main
