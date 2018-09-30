@@ -1,19 +1,26 @@
 ### Task1
 
-from src 
+from task1 
 ===
 to build:
-javac TaskApplet.java
+```
+javac -d bin/ src/Data.java
+javac -cp bin/ -d bin/ src/TaskApplet.java
+```
 ===
 to execute:
-appletviewer index.html
+```
+appletviewer -J-cp -J./bin/ src/index.html
+```
 ===
 ### Task2
 
 from src 
 ===
 to build:
+```
 javac -d labpackage Number.java && javac -cp labpacakge -d labpackage Main.java
+```
 ===
 to run:
 from lab1/task2
