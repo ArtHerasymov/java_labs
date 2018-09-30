@@ -24,5 +24,5 @@ javac -cp bin/ -d bin/ src/Main.java
 to run:
 from task2
 ```
-java -cp bin/ com.lab1.task2.Main
+java -cp bin/ com.my.lab1.task2.Main
 ```
