@@ -1,6 +1,6 @@
 package com.my.lab1.task2;
 
-public class Number{
+public class SmartNumber{
     private int counter = 2;
 
     public boolean isLucky(int n){
