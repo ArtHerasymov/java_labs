@@ -1,4 +1,5 @@
-Task1
+### Task1
+
 from task1 
 to build:
 ```
@@ -10,7 +11,8 @@ to execute:
 appletviewer -J-cp -J./bin/ src/index.html
 ```
 
-Task2
+### Task2
+
 from task2
 to build:
 ```
@@ -21,4 +23,6 @@ javac -cp bin/ -d bin/ src/Main.java
 ```
 to run:
 from task2
+```
 java -cp bin/ com.lab1.task2.Main
+```
