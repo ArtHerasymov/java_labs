@@ -49,4 +49,12 @@ public class SmartStringArray {
         str.append(this.strings[this.strings.length - 1]);
         return str.toString();
     }
+
+    public void Add(int index, String s){
+        if(index < 0 || index > this.strings.length) {
+            System.out.println("Wrong index");
+        } else {
+            this.strings[index] = s;
+        }
+    }
 }
