@@ -10,6 +10,13 @@ public class AuthorData {
         this.curDate = new Date().toString();
     }
 
+    /**
+     * @return current date
+     */
     public String getCurDate(){ return this.curDate; }
+
+    /**
+     * @return authors surname
+     */
     public String getAuthorSurname() { return this.authorSurname; }
 }

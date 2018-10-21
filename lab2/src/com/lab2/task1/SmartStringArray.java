@@ -20,6 +20,10 @@ public class SmartStringArray {
         this.strings = array;
     }
 
+
+    /**
+     * @return average size of strings in array
+     */
     public int getAverageSize(){
         float len = 0;
         int size = this.strings.length;
@@ -30,6 +34,9 @@ public class SmartStringArray {
         return Math.round(len/this.strings.length);
     }
 
+    /**
+     * This method prints strings with length more than average
+     */
     public void printMoreThanAverage(){
         int average = this.getAverageSize();
         int size = this.strings.length;
@@ -41,6 +48,7 @@ public class SmartStringArray {
         }
     }
 
+    @Override
     public String toString(){
         StringBuilder str = new StringBuilder();
         for(int i = 0; i < this.strings.length - 1; i++){
@@ -56,5 +64,13 @@ public class SmartStringArray {
         } else {
             this.strings[index] = s;
         }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        SmartStringArray self = (SmartStringArray) obj;
+        return Arrays.equals(strings, self.strings);
     }
 }

@@ -1,18 +1,18 @@
+import com.lab2.task1.AuthorData;
 import com.lab2.task1.SmartStringArray;
+import com.lab2.task1.StringReader;
+
 import java.util.*;
 
 public class Main {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Input quantity of strings: ");
-        int n = sc.nextInt();
-        SmartStringArray strs = new SmartStringArray(n);
-        for(int i = 0; i < n; i++){
-            System.out.print("Next string: ");
-            strs.Add(i, sc.next());
+        try {
+            SmartStringArray arr = new SmartStringArray(new StringReader(sc.nextInt()).getStrings());
+            AuthorData ad = new AuthorData("Default");
+            System.out.println(ad.getAuthorSurname() + "\n" + ad.getCurDate());
+        } catch (Exception e){
+            System.err.println(e);
         }
-        System.out.println(strs.toString());
-
-        strs.printMoreThanAverage();
     }
 }
