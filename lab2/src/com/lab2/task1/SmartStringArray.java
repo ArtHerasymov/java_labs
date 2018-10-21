@@ -40,6 +40,7 @@ public class SmartStringArray {
     public void printMoreThanAverage(){
         int average = this.getAverageSize();
         int size = this.strings.length;
+        System.out.printf("Average size: %d\n", average);
         for(int i = 0; i < size; i++){
             String current = this.strings[i];
             if(current.length() > average) {

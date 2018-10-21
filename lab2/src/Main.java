@@ -8,7 +8,11 @@ public class Main {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         try {
-            SmartStringArray arr = new SmartStringArray(new StringReader(sc.nextInt()).getStrings());
+            System.out.print("Num of strings: ");
+            StringReader reader = new StringReader(sc.nextInt());
+            reader.readStrings();
+            SmartStringArray arr = new SmartStringArray(reader.getStrings());
+            arr.printMoreThanAverage();
             AuthorData ad = new AuthorData("Default");
             System.out.println(ad.getAuthorSurname() + "\n" + ad.getCurDate());
         } catch (Exception e){

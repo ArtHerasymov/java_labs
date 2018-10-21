@@ -16,6 +16,7 @@ public class StringReader {
     public void readStrings(){
         Scanner sc = new Scanner(System.in);
         for(int i = 0; i < this.quantity; i++){
+            System.out.print("Next string: ");
             this.strings[i] = sc.next();
         }
     }
