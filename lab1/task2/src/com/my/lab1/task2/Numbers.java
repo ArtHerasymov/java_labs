@@ -1,5 +1,4 @@
 package com.my.lab1.task2;
-// import com.my.lab1.task2.Number;
 import java.util.*;
 
 public class Numbers{
@@ -28,6 +27,23 @@ public class Numbers{
         this.numbers.add(number);
     }
 
+    public void clear(){
+        this.numbers.clear();
+    }
+
+    public void remove(int index){
+        this.numbers.remove(index);
+    }
+
     public String toString(){ return numbers.toString(); }
+
     public int getHash(){ return numbers.hashCode(); }
+
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        if (!super.equals(object)) return false;
+        Numbers numbers1 = (Numbers) object;
+        return java.util.Objects.equals(numbers, numbers1.numbers);
+    }
 }
